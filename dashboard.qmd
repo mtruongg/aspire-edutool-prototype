@@ -3,7 +3,6 @@ title: "Testing Sites in Miami-Dade County"
 format: 
   dashboard:
     orientation: columns
-    theme: yeti
     embed-resources: true
 ---
 
