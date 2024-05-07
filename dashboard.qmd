@@ -1,0 +1,46 @@
+---
+title: "Testing Sites in Miami-Dade County"
+format: 
+  dashboard:
+    orientation: columns
+    theme: yeti
+    embed-resources: true
+---
+
+```{r setup, include = FALSE}
+library(here)
+library(tidyverse)
+library(leaflet)
+
+# Miami-Dade zipcode shapefile
+md_nbhd_shp <- sf::st_read(here("shapefile", "ZipCode.shp"))
+
+# Get testing site data
+testing_sites <- read.csv(here("data", "MiamiDade_Testing_Sites_20240502.csv"))
+
+```
+
+```{r}
+testing_map <- testing_sites |> 
+  leaflet() |> 
+  addProviderTiles("CartoDB.Positron") |> 
+  addPolygons(data = md_nbhd_shp,
+              weight = 0.5,
+              color = "#333",
+              fillOpacity = 0.3,
+              smoothFactor = 0.5,
+              highlightOptions = highlightOptions(weight = 2.0,
+                                                  color = "#FFF"),
+              label = ~ ZIPCODE) |> 
+  addMarkers(data = testing_sites, lng = ~ Longitude, lat = ~ Latitude, popup = ~ Name)
+
+
+```
+
+## Column
+
+```{r}
+#| title: Map of testing sites
+testing_map
+```
+

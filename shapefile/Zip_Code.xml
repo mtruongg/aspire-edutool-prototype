@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <descript>
+            <abstract>A polygon feature class of the Miami-Dade County Zip Code boundaries. These boundaries were aligned to the Miami-Dade County street centerline coverage and include both sides of the street with an offset of 30 feet from the street centerline.Updated: Annually The data was created using: Projected Coordinate System: WGS_1984_Web_Mercator_Auxiliary_SphereProjection: Mercator_Auxiliary_Sphere</abstract>
+        </descript>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Florida</themekey>
+                <themekey>Miami-Dade County</themekey>
+                <themekey>MDC</themekey>
+                <themekey>County Government</themekey>
+                <themekey>Local Government</themekey>
+                <themekey>WGS84</themekey>
+                <themekey>Boundaries</themekey>
+                <themekey>Zip Code</themekey>
+                <themekey/>
+                <themekey>USPS</themekey>
+                <themekey>United States Postal Service</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>None</useconst>
+    </idinfo>
+    <metainfo>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
